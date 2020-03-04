@@ -1,6 +1,7 @@
 <?php
 
-class AboutController{
+class AboutController
+{
 
   public function index()
   {

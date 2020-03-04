@@ -2,7 +2,7 @@
 
 class DB
 {
-
+  //connection to database
   public static function getConnection()
   {
     $paramsPath = ROOT.'/config/db_params.php';

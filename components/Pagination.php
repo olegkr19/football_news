@@ -3,6 +3,7 @@
 /*
  * Класс для генерации постраничной навигации
  */
+//Class for pagination 
 
 class Pagination
 {

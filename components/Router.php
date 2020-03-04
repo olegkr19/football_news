@@ -11,7 +11,7 @@ class Router
     $routesPath = ROOT.'/config/routes.php';
     $this->routes = include($routesPath);
   }
-  //uri => controller/action/param,
+
   private function getUri()
   {
     if(!empty($_SERVER['REQUEST_URI'])){
@@ -29,7 +29,6 @@ class Router
         $segments = explode('/',$internalRoute);
 
         $controllerName = array_shift($segments) .'Controller';
-        //$controllerName = ucfirst($controllerName);
 
         $actionName = ucfirst(array_shift($segments));
         $parameters = $segments;
